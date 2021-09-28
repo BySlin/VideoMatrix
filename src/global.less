@@ -1,0 +1,62 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+// 抽屉的阴影
+.ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
+  // box-shadow: -4px 10px 10px 0px #000000 !important;
+  box-shadow: -3px 0px 0px 0px rgba(0, 0, 0, 0.04) !important;
+  background: #ffffff;
+}
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
