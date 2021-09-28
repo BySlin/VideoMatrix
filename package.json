@@ -39,7 +39,6 @@
     "@szhsin/react-menu": "^1.11.0",
     "add": "^2.0.6",
     "ahooks": "^2.10.9",
-    "byslin-boot-view-utils": "https://gitee.com/byslin_200/byslin-boot-view-utils.git",
     "query-string": "^7.0.1",
     "react": "17.x",
     "react-dom": "17.x",
