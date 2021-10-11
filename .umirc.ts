@@ -1,11 +1,9 @@
-import { EXTERNALS, HEAD_SCRIPTS } from 'byslin-boot-view-utils/lib/plugins';
 import { defineConfig } from 'umi';
 
 export default defineConfig({
   history: {
     type: 'browser',
   },
-  headScripts: [...HEAD_SCRIPTS],
   locale: {
     default: 'zh-CN',
     antd: true,
@@ -26,7 +24,7 @@ export default defineConfig({
   },
   electronBuilder: {
     routerMode: 'browser',
-    externals: ['@byslin/macadam', ...EXTERNALS],
+    externals: ['@byslin/macadam'],
     builderOptions: {
       npmRebuild: false,
       appId: 'com.byslin.video.matrix',
